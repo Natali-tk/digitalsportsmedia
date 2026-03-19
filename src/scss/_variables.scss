@@ -1,0 +1,24 @@
+// Fonts
+$font-main: "Roboto", sans-serif;
+$font-secondary: "Roboto Slab", serif;
+
+// Font Weights
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: rgba(255, 255, 255, 0.54);
+$color-orange: #ff891d;
+$main-color: #4b99f5;
+$color-background: #343434;
+$color-main-text: rgba(0, 0, 0, 0.8);
+
+//Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,175 @@
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-menu">
+        <button class="header__burger" aria-label="Menu" id="burgerBtn">
+          <img src="./src/assets/svg/burger.svg" alt="burger" />
+        </button>
+        <aside class="sidebar" id="sidebar">
+          <div class="sidebar__content">
+            <button class="sidebar__close" id="closeSidebar" aria-label="Close menu">&times;</button>
+            <div class="sidebar__logo">
+              <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.87791 13.4461L9.02539 25.7411L6.72304 26.8923L-3.62396e-05 13.4461L6.72304 0L9.02539 1.15118L2.87791 13.4461Z"
+                  fill="#4B99F5"
+                />
+              </svg>
+              <img src="./src/assets/svg/sidebar-logo.svg" alt="" />
+              <svg width="10" height="27" viewBox="0 0 10 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.14748 13.4461L0 1.15118L2.30235 0L9.02543 13.4461L2.30235 26.8923L0 25.7411L6.14748 13.4461Z"
+                  fill="#4B99F5"
+                />
+              </svg>
+            </div>
+
+            <nav class="sidebar__nav">
+              <div class="sidebar__section">
+                <p class="sidebar__caption">Рубрики</p>
+                <ul class="sidebar__list">
+                  <li class="sidebar__item"><a href="#" data-i18n="news">НОВОСТИ</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="regions">РЕГИОНЫ</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="sport">СПОРТ</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="rates">Ставки</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="finance">ФИНАНСЫ</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="showbiz">ШОУБИЗ</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="lifestyle">ЛАЙФСТАЙЛ</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="it">IT</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="auto">АВТО</a></li>
+                </ul>
+                <p class="sidebar__caption" data-i18n="project">Проекты мета</p>
+                <ul class="sidebar__list">
+                  <li class="sidebar__item"><a href="#" data-i18n="mail">Почта</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="weather">Погода</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="tvprograms">ТВ-программа</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="maps">карты</a></li>
+                  <li class="sidebar__item"><a href="#" data-i18n="translator">переводчик</a></li>
+                </ul>
+                <div class="sidebar__settings">
+                  <div class="settings-group">
+                    <span class="settings-group__label" data-i18n="dark_theme">Темная тема</span>
+                    <label class="ui-switch">
+                      <input type="checkbox" id="themeCheckbox" />
+                      <span class="ui-switch__slider"></span>
+                    </label>
+                  </div>
+
+                  <div class="settings-group">
+                    <span class="settings-group__label" data-i18n="news_text">Текст новостей</span>
+                    <div class="lang-selector">
+                      <button class="lang__switcher-btn sidebar-lang" data-lang="ua">UA</button>
+                      <button class="lang__switcher-btn sidebar-lang" data-lang="ru">RU</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </aside>
+        <a href="/" class="header__logo">
+          <img src="./src/assets/svg/vector2.svg" alt="META" />
+          <span>МЕТА</span>
+          <img src="./src/assets/svg/vector1.svg" alt="META" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a href="#" data-i18n="news">НОВОСТИ</a></li>
+            <li><a href="#" data-i18n="sport">СПОРТ</a></li>
+            <li><a href="#" data-i18n="betting">БЕТТИНГ</a></li>
+            <li><a href="#" data-i18n="finance">ФИНАНСЫ</a></li>
+            <li><a href="#" data-i18n="showbiz">ШОУБИЗ</a></li>
+            <li><a href="#" data-i18n="lifestyle">ЛАЙФСТАЙЛ</a></li>
+            <li><a href="#" data-i18n="it">IT</a></li>
+            <li><a href="#" data-i18n="auto">АВТО</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__top-actions">
+        <div class="lang__switcher">
+          <button class="lang__switcher-btn" data-lang="ua">UA</button>
+          <button class="lang__switcher-btn" data-lang="ru">RU</button>
+        </div>
+        <div class="action__btn-box">
+          <button class="action__btn search">
+            <img src="./src/assets/svg/search.svg" alt="search" />
+          </button>
+          <div class="notification-container">
+            <button class="action__btn notification">
+              <img src="./src/assets/svg/notifications.svg" alt="notification" />
+            </button>
+            <span class="notification-badge">1</span>
+          </div>
+          <div class="user-container">
+            <button class="action__btn user" id="userIcon">
+              <img src="./src/assets/svg/user.svg" alt="user" />
+            </button>
+            <div class="user-dropdown" id="userDropdown">
+              <ul class="dropdown__list one">
+                <li class="dropdown__list-item"><a href="#" data-i18n="profile">Мой профиль</a></li>
+                <li class="dropdown__list-item"><a href="#" data-i18n="comments">Мои комментарии</a></li>
+              </ul>
+              <ul class="dropdown__list two">
+                <li class="dropdown__list-item">
+                  <a href="#" class="dropdown__list-item_exit-link" id="exit">
+                    <span data-i18n="logout">Выход</span>
+                    <img class="dropdown__list-item exit" src="./src/assets/door.svg" alt="exit" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="action__btn email" onclick="window.open('mailto:example@mail.com', '_blank')">
+            <img src="./src/assets/svg/email.svg" alt="email" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="list-wrapper">
+        <ul class="header__bottom-list">
+          <li class="header__bottom-list-item"><a href="#" data-i18n="main">Главная</a></li>
+          <li class="header__bottom-list-item"><a href="#" data-i18n="accident">Происшествия</a></li>
+          <li class="header__bottom-list-item"><a href="#" data-i18n="society">Общество</a></li>
+          <li class="header__bottom-list-item"><a href="#" data-i18n="economy">Экономика</a></li>
+          <li class="header__bottom-list-item"><a href="#" data-i18n="politic">Политика</a></li>
+          <li class="header__bottom-list-item"><a href="#" data-i18n="education">Образование</a></li>
+          <li class="header__bottom-list-item"><a href="#" data-i18n="medicine">Медицина</a></li>
+          <li class="header__bottom-list-item"><a href="#" data-i18n="video">Видео</a></li>
+          <li class="header__bottom-list-item"><a href="#" data-i18n="photo">Фото</a></li>
+          <li class="header__bottom-list-item"><a href="#" data-i18n="entertainment">Развлечения</a></li>
+          <li class="header__bottom-list-item more-container" id="moreMenu">
+            <a href="#" class="more-link">
+              <span data-i18n="more">Еще</span>
+              <svg
+                width="12"
+                height="14"
+                class="more-icon"
+                viewBox="0 0 12 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.8371 4.48125L11.3067 3.9509C11.1808 3.825 10.9773 3.825 10.8514 3.9509L6.00049 8.79107L1.14959 3.9509C1.0237 3.825 0.820128 3.825 0.694235 3.9509L0.163878 4.48125C0.0379848 4.60714 0.0379848 4.81072 0.163878 4.93661L5.77281 10.5455C5.8987 10.6714 6.10227 10.6714 6.22816 10.5455L11.8371 4.93661C11.963 4.81072 11.963 4.60714 11.8371 4.48125Z"
+                  fill="#4B99F5"
+                />
+              </svg>
+            </a>
+            <ul class="more-dropdown">
+              <li><a href="#" data-i18n="culture">Культура</a></li>
+              <li><a href="#" data-i18n="technology">Технології</a></li>
+              <li><a href="#" data-i18n="science">Наука</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

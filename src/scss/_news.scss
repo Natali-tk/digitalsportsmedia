@@ -1,0 +1,33 @@
+.news__item {
+  &.mob {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  &-img {
+    width: 33.33vw;
+    height: auto;
+    border-radius: 8px;
+  }
+  &-content {
+    display: flex;
+    flex: 1;
+  }
+}
+.news__item-img {
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
+.news__list-btn {
+  display: none;
+  margin: 32px auto;
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+}

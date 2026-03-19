@@ -1,0 +1,97 @@
+@use "variables" as *;
+@use "header";
+@use "hero";
+@use "news";
+@use "sidebar";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-main;
+  font-weight: $fw-regular;
+  color: $color-black;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  font-weight: $fw-bold;
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+.container {
+  max-width: 1238px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.user-menu {
+  position: relative;
+
+  &__btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background: $color-white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+}
+.list-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  user-select: none;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
